@@ -80,10 +80,10 @@ var risk_label = "Необходимо указать все показател�
 var rezult_label = ""
 
 if (risk_kras <= cutoff){
-	risk_label = "Рассчитанный риск составил " + risk_kras+"%. Значение ниже критического ("+cutoff+"%)"
+	risk_label = "Рассчитанный риск составил " + risk_kras+"%. Ниже критического ("+cutoff+"%)"
 	rezult_label = "Результат: средняя степень"}
 	else if (risk_kras > cutoff){
-	risk_label = "Рассчитанный риск составил " + risk_kras+"%. Значение выше критического ("+cutoff+"%)"
+	risk_label = "Рассчитанный риск составил " + risk_kras+"%. Выше критического ("+cutoff+"%)"
 	rezult_label = "Результат: тяжёлая степень"}
 	
 document.getElementById('risk').value=risk_label 
@@ -181,7 +181,7 @@ function datedis () {
         </div>
 		
         <div class="form-group" disabled>
-               <label class="control-label col-md-3 my_label" >Лейкоциты (10^9 / л):</label>
+               <label class="control-label col-md-3 my_label" >Лейкоциты (^9 / л):</label>
                <div class="col-md-8">
                <input class="form-control my_input" type="number" id="leyk" onkeypress='return isNumberKey(event)' disabled/>
                </div>
